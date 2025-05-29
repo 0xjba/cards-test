@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Glitch ETH</title>
+  <style>
+    body {
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+    .tweet-box {
+      width: 500px;
+      border: 1px solid #e1e8ed;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .post-button {
+      margin-top: 20px;
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #1da1f2;
+      border-radius: 9999px;
+      color: #1da1f2;
+      background: none;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .post-button:hover {
+      background: #f0f8ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="tweet-box">
+    <button class="post-button" onclick="post()">Post #!</button>
+  </div>
+
+  <script>
+    function post() {
+      const text = "E̴͗̀̽̏͂͆̈́͛̐͠͠͠T̷͌͒̔͋̈́̍̈́̿̏̅̎͌H̸́̋̋̈͑͊̾̕";
+      const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+      window.open(tweetUrl, "_blank");
+    }
+  </script>
+</body>
+</html>
